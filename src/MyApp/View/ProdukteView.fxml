@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyApp.Controller.ProdukteController">
+   <children>
+      <Label layoutX="440.0" layoutY="58.0" text="Produkte">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableProdukte" layoutX="196.0" layoutY="185.0" prefHeight="451.0" prefWidth="631.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="103.3333740234375" text="id" />
+          <TableColumn fx:id="produkt_name" prefWidth="246.0" text="produkte_name" />
+            <TableColumn fx:id="preis" minWidth="0.0" prefWidth="123.33331298828125" text="preis" />
+            <TableColumn fx:id="beschreibung" prefWidth="158.00006103515625" text="beschreibung" />
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#onContextUpdateClick" text="Update" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <TextField fx:id="textSearch" layoutX="196.0" layoutY="141.0" />
+   </children>
+</AnchorPane>

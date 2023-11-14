@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane stylesheets="@/MyApp/CSS/MyCSS.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyApp.Controller.StartController">
+   <right>
+      <ScrollBar orientation="VERTICAL" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="menuClose" mnemonicParsing="false" onAction="#onMenuCloseClick" text="Close" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Games">
+               <items>
+                  <MenuItem fx:id="menuClose1" mnemonicParsing="false" onAction="#onMenuTicTacToeClick" text="TicTacToe" />
+                  <MenuItem fx:id="menuClose11" mnemonicParsing="false" onAction="#onMenuShellGameClick" text="Shell Game" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Database">
+               <items>
+                  <MenuItem fx:id="menuRead" mnemonicParsing="false" onAction="#onMenuReadClick" text="Read" />
+                  <MenuItem fx:id="menuRead1" mnemonicParsing="false" onAction="#onMenuCreateClick" text="Create" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="menuAbout" mnemonicParsing="false" onAction="#onMenuAboutClick" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

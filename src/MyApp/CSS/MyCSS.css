@@ -1,0 +1,8 @@
+.root {
+    -fx-background-color: skyblue;
+}
+
+.label{
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
